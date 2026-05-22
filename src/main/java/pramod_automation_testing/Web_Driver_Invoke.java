@@ -33,6 +33,8 @@ public class Web_Driver_Invoke {
 
         System.out.println(driver.getCurrentUrl()); // Validate the URL is it correct or not
 
+        System.out.println(driver.getPageSource());// Gves the source of the last page Loaded
+
         driver.close();// to close the Opened particular Browser window
 
         driver.quit();// it closes all assosiated Browser windows wrt opened by selenium when doing automation

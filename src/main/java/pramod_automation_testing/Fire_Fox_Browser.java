@@ -19,6 +19,8 @@ public class Fire_Fox_Browser {
 
         System.out.println(driver.getCurrentUrl());// validated the URL
 
+        System.out.println(driver.getPageSource());// Gves the source of the last page Loaded
+
         //driver.close();//closing the perticular one browser window
 
         driver.quit();// close all assosiated browser windows wrt opened by selenium while automation

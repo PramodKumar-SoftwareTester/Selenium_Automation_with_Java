@@ -16,7 +16,10 @@ public class Microsoft_Edge_Browser {
         driver.get("https://tmnas.com/");
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
+        System.out.println(driver.getPageSource());// Gves the source of the last page Loaded
+
         driver.close();
+
         //driver.quit();
     }
 }
