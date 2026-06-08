@@ -13,6 +13,10 @@ public class An_element_has_multiple_of_2 {
                 System.out.println("Yes array has an element of multiple of 2");
                 break;// Exit the Loop
             }
+            else
+            {
+                System.out.println("there are no elements which multiple of 2");
+            }
         }
 
     }
