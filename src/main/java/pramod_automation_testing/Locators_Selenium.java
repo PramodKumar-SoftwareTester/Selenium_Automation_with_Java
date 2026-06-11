@@ -43,6 +43,24 @@ public class Locators_Selenium {
         //parentTagname childTagname -> form p
         driver.findElement(By.cssSelector("button.go-to-login-btn")).click();//Css selecto for login button
         //driver.quit();
+        driver.findElement(By.cssSelector("input#inputUsername")).sendKeys("Pramod123");
+        //Css selector - Tagname#id
+        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+        //Regular Expression CSS Selectors
+        Thread.sleep(1000);
+        driver.findElement(By.id("chkboxOne")).click();//check Box clicking
+        Thread.sleep(1000);
+        driver.findElement(By.id("chkboxTwo")).click();
+        driver.findElement(By.xpath("//button[@class='submit signInBtn']")).click();
+        //if Class and class name both there we have to use to build CSS selector or X path - class classname at value
+        System.out.println(driver.findElement(By.xpath("//div[@class='login-container']/p")).getText());
+        //X-path parent child
+        //Tagname - can use here
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//button[contains(@class,'btn')]")).click();
+        //Regular Expression for X Path
+        //for go to Login Button - Customised X path - Parent to child -
+        //-  //div[@class='go-to-login-btn']/button[1]
 
     }
 }
