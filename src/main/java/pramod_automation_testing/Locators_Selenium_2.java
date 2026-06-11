@@ -29,7 +29,9 @@ public class Locators_Selenium_2 {
         Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+name+",");
         //Using string variable in the script
         driver.findElement(By.xpath("//button[text()='Log Out']")).click();
-        // if any element to check through Text using X - Path like above
+        // if any element to check through Text using X - Path like above, in that Tag name Place we can use *
         driver.close();
     }
+
+
 }
