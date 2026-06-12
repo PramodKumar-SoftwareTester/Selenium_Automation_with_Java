@@ -3,6 +3,8 @@ package pramod_automation_testing;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 import java.time.Duration;
@@ -12,7 +14,9 @@ public class Dynamically_Password_by_Method {
 
         String name="Pramod Kumar HL";
 
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver=new ChromeDriver();//Chrome Browser
+        //WebDriver driver = new FirefoxDriver();//FireFox Browser
+        //WebDriver driver = new EdgeDriver();//Edge Browser
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
