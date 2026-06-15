@@ -18,9 +18,19 @@ public class Dynamic_Dropdowns {
         // //a[@value='BLR'] - X - Path for Bengaluru
         // //a[@value='MAA'] - X - Path for chennai
 
+        /*
         driver.findElement(By.xpath("//a[@value='BLR']")).click();//select the value
         Thread.sleep(1000);
         driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();//select the value
+        */
+
+        driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_originStation1_CTNR'] //a[@value='BLR']")).click();
+        // X-Path -> Parent X Path and Child X-Path Cobination
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
+        //X-Path -> Parent X Path and Child X-Path Cobination -> Parent Xpath space Child Xpath
+
+
 
     }
 }
