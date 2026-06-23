@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Alerts_Handling {
     static void main(String[] args) {
 
-        String name="Pramod Kumar";
+        String name = "Pramod Kumar";
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
